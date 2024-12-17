@@ -15,13 +15,13 @@ OpenRabbit supports two modes:
 
 Example:
 
-    openrabbitfu --dc8pilot coldload.bin pilot.bin user.bin /dev/ttyUSB0
+    openrabbitfu coldload.bin pilot.bin user.bin /dev/ttyUSB0
 
-Will upload the user program user.bin onto the target via cable attached to /dev/ttyUSB0 and using initial loader coldload.bin, secondary loader pilot.bin (with the secondary loader in Dynamic C 8 format).
+Will upload the user program user.bin onto the target via cable attached to /dev/ttyUSB0 and using initial loader coldload.bin, secondary loader pilot.bin.
 
 Options:
 
---help       Showusage information summary.
+--help       Show usage information summary.
 --verbose    Increase verbosity (this option can be used up to 3 times, with each additional use increasing verbosity).
 --slow       Workaround for tcdrain() driver bugs (see below for details).
 --run        Run program immediately after programming.

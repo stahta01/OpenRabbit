@@ -10,7 +10,7 @@ Build (without initial loader):
     ./configure --disable-coldboot
     make
 
-If there is no configure (i.e. you got the code directly from the repo), there is an additional steps to do first.
+If there is no configure (i.e. you got the code directly from the repo), there is an additional step to do first.
 
 The build system makes use of automake, autoconf and libtool.  Make sure
 they're installed on your system:
