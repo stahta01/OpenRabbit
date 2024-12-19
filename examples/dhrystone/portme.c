@@ -6,7 +6,11 @@
 
 #include "targetconfigurations.h"
 
-void _sdcc_external_startup(void)
+#if __SDCC_REVISION >= 13762
+unsigned char __sdcc_external_startup(void)
+#else
+unsigned char _sdcc_external_startup(void)
+#endif
 {
 	// Disable watchdog
 	WDTTR = 0x51;
@@ -20,6 +24,8 @@ void _sdcc_external_startup(void)
 	// Configure memory wait states
 	MB0CR = MB0CR_VALUE;
 	MB2CR = MB2CR_VALUE;
+
+	return 0;
 }
 
 void init(void)

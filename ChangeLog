@@ -1,4 +1,7 @@
-????-??-??	v0.2.3
+xxxx-xx-xx	v0.2.4
+Fix example code for SDCC 4.2.10 and later.
+
+2024-12-17	v0.2.3
 Add --slow option to work around tcdrain() driver bugs. Makes most USB-to-serial converters work. Report memory speeds from id block in --verbose output. Pull reset line low for 400 ms (instead of 250 ms) for more reliable reset.
 
 2020-09-25	v0.2.2
